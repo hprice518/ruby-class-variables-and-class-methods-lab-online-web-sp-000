@@ -41,7 +41,7 @@ class Song
 
   def self.artist_count
     artist_count = {}
-    if artist_count.has_key?(genre)
+    if artist_count.has_key?(genres)
       puts @@genres.to_histogram
     end
     artist_count
