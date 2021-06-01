@@ -44,7 +44,7 @@ class Song
     if artist_count.has_key?(genres)
       puts @@genres.to_histogram
     end
-    artist_count << @@genres
+    artist_count
   end
   
 end
