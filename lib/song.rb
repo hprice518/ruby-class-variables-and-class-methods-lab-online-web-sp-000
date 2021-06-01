@@ -39,12 +39,16 @@ class Song
     genre_count
   end
 
-  def self.artist_count
-    artist_count = {}
-    if artist_count.has_key?(genres)
-      puts @@genres.histogram
+ def self.genre_count
+    genre_count = {}
+    @@genres.each do |genre|
+      if genre_count[genre]
+        genre_count[genre] += 1 
+      else
+        genre_count[genre] = 1 
+      end
     end
-    artist_count
+    genre_count
   end
   
 end
